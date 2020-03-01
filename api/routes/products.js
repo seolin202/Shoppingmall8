@@ -10,3 +10,5 @@ router.get('/', (req, res) => {
         msg: "products data get"
     });
 });
+// router 모듈화 후 out
+module.exports = router;
