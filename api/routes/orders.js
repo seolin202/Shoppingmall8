@@ -10,5 +10,25 @@ router.get('/', (req, res) => {
         msg: "orders data get"
     });
 });
+
+// order posting api
+router.post('/', (req, res) => {
+    res.json({
+        msg: "orders posting"
+    });
+});
+
+router.patch('/', (req, res) => {
+    res.json({
+        msg: "orders updated"
+    });
+});
+
+router.delete('/', (req, res) => {
+    res.json({
+        msg: "orders deleted"
+    });
+});
+
 // router 모듈화 후 out
 module.exports = router;
